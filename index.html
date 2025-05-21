@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Data User</title></head>
+<body>
+    <h1>Daftar User</h1>
+    <a href="/add">Tambah Data</a>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.name }} ({{ user.email }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
